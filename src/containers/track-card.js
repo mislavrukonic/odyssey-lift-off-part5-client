@@ -28,7 +28,7 @@ const INCREMENT_TRACK_VIEWS = gql`
  */
 const TrackCard = ({ track }) => {
   const { title, thumbnail, author, durationInSeconds, modulesCount, id } = track;
-
+  //test comment
   const [incrementTrackViews] = useMutation(INCREMENT_TRACK_VIEWS, {
     variables: { incrementTrackViewsId: id },
     // to observe what the mutation response returns
